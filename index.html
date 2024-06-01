@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Codification / Codificación-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---------------->
-
-    <!--Description / Descripción-->
-    <meta name="description" content="Pagina One-Page">
-    <!---------------->
-
-    <!--Title / Titulo-->
-    <title>Pagina One-Page</title>
-    <!---------------->
-
-    <!--CSS Files / Archivos CSS-->
-    <link href="estilo.css" rel="stylesheet" type="text/css">
-    <!---------------->
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="imagenes/cosina.jpg" style="width:100%">
+      <div class="text">Fry Burgers</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="imagenes/hamburgesacompartida2.jpg" style="width:100%">
+      <div class="text">Un lugar para relajarse y comer</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="imagenes/mesera.jpg" style="width:100%">
+      <div class="text">Con atencion de primera</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="imagenes/hamburgesapannegro.jpg" style="width:100%">
+        <div class="text">Para todos los gustos</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <script src="java.js"></script>
+
 </body>
 </html>
