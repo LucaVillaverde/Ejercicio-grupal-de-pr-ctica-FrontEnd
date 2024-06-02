@@ -1,66 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!--Codification / Codificación-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---------------->
+    <head>
+        <!--Codification / Codificación-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!---------------->
 
-    <!--Description / Descripción-->
-    <meta name="description" content="Pagina One-Page">
-    <!---------------->
+        <!--Description / Descripción-->
+        <meta name="description" content="Pagina One-Page" />
+        <!---------------->
 
-    <!--Title / Titulo-->
-    <title>Pagina One-Page</title>
-    <!---------------->
+        <!--Title / Titulo-->
+        <title>Pagina One-Page</title>
+        <!---------------->
 
-    <!--CSS Files / Archivos CSS-->
-    <link href="estilo.css" rel="stylesheet" type="text/css">
-    <!---------------->
-</head>
-<body>
-<!-- Slideshow container -->
-<div class="slideshow-container">
+        <!--CSS Files / Archivos CSS-->
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
+        <!---------------->
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="" />
+                <nav>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <main >
+            <!-- Slideshow container -->
+            <div class="slideshow-container" id="inicio">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img
+                        class="mySlides-Imagen"
+                        src="imagenes procesadas/Imagen Cocina.webp"
+                        style="width: 100%"
+                    />
+                    <div class="text">Fry Burgers</div>
+                </div>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img class="mySlides-Imagen" src="imagenes procesadas/Imagen Cocina.webp" style="width:100%">
-      <div class="text">Fry Burgers</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img class="mySlides-Imagen" src="imagenes procesadas/Imagen Hamburguesa.webp" style="width:100%">
-      <div class="text">Un lugar para relajarse y comer</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img class="mySlides-Imagen" src="imagenes procesadas/mesera.webp" style="width:100%">
-      <div class="text">Con atencion de primera</div>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img class="mySlides-Imagen" src="imagenes procesadas/hamburgesapannegro.webp" style="width:100%">
-        <div class="text">Para todos los gustos</div>
-      </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-  <script src="java.js"></script>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img
+                        class="mySlides-Imagen"
+                        src="imagenes procesadas/Imagen Hamburguesa.webp"
+                        style="width: 100%"
+                    />
+                    <div class="text">Un lugar para relajarse y comer</div>
+                </div>
 
-</body>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img
+                        class="mySlides-Imagen"
+                        src="imagenes procesadas/mesera.webp"
+                        style="width: 100%"
+                    />
+                    <div class="text">Con atencion de primera</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img
+                        class="mySlides-Imagen"
+                        src="imagenes procesadas/hamburgesapannegro.webp"
+                        style="width: 100%"
+                    />
+                    <div class="text">Para todos los gustos</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          
+            <hr>
+
+          <section id="nosotros" class="secciones">
+            <!-- Nosotros -->
+
+          </section>
+
+          <hr>
+
+          <section id="servicios" class="secciones">
+            <h2 id="titulo_servicios">SERVICIOS</h2>
+            
+            <!-- Carta de menu 1 -->
+            <div id="contenedor_servicios">
+              <div class="servicio" id="servicio_1">
+
+                <div class="contenedor">
+                  <img src="MenuHamburguesas.webp"  alt="CAMBIAR" class="image">
+                  <div class="overlay">
+                    <div class="texto">MENU 1</div>
+                  </div>
+                </div>
+
+              <!-- Carta de menu 2 -->
+              </div>
+              <div class="servicio" id="servicio_2">
+                <div class="contenedor">
+                  <img src="menuVegetariano.jpg"  alt="CAMBIAR" class="image">
+                  <div class="overlay">
+                    <div class="texto">MENU 2</div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Carta de menu 2 -->
+              <div class="servicio" id="servicio_3">
+                <div class="contenedor">
+                  <img src="menu_comida.webp"  alt="CAMBIAR" class="image">
+                  <div class="overlay">
+                    <div class="texto">MENU 3</div>
+                  </div>
+                </div>
+            </div>
+
+          </section>
+
+          <hr>
+          
+          <section id="contacto" class="secciones">
+            <!-- Contacto -->
+          </section>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script src="java.js"></script>
+    </body>
 </html>

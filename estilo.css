@@ -1,5 +1,50 @@
 
-* {box-sizing:border-box}
+html{
+  scroll-behavior: smooth;  /*<-- Suavizado al desplazarse*/
+}
+
+* {
+  box-sizing:border-box
+}
+
+body{
+  background-color: #dfb302;
+  color: #A10702;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* estilos generales */
+
+h2{
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  text-align: justify;
+}
+
+/* SEPARADOR DE SECCIONES */
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+/* NAVBAR AQUI */
+
+
+
+
+/*  ---Carrusel--- */
 
 /* Slideshow container */
 .slideshow-container {
@@ -94,3 +139,76 @@
   animation-duration: 2s;
 }
 
+
+/* ESTILO PARA CADA SECCION DE LA PAGINA */
+
+.secciones{
+  
+  width: 90vw;
+  height: 90vh; /*<-- ALTO DE SECCION EN BASE A LA PANTALLA*/
+  margin: 30px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
+  padding: 8px;
+
+   background-color: rgb(255, 255, 255) /*; <-- COLOR SOLO PARA VISUALIZACION DE SECCIONES */
+}
+
+
+
+
+/*------------------------------ Seccion de servicios */
+#contenedor_servicios{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+/* Tarjeta de menu */
+.contenedor {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  margin-left: 50px;
+  display: block;
+  width: 150%;
+  height: auto;
+  border: 2px solid  #A10702;
+  box-shadow: 0 0 50px #0009;
+}
+
+/* Overlay de la tarjeta */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  height: 100%;
+  width: 150%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1982c4;
+}
+
+.contenedor:hover .overlay {
+  opacity: 0.9;
+}
+
+.texto {
+  color: #dfb302;
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*-------------------------------------*/
