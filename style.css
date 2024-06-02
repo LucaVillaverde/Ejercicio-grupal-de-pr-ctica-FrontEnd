@@ -101,6 +101,47 @@ hr {
   margin-right: 10px;
 }
 
+/* Slideshow images */
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fondo1,#fondo2,#fondo3,#fondo4{
+  width: 89vw;
+  height: 35vh;
+  max-width: 390px;
+  max-height: 219px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#fondo1{
+  background-image: url(imagenes_procesadas/CarruselImagen_1_Movil.webp);
+}
+
+#fondo2{
+  background-image: url(imagenes_procesadas/CarruselImagenClientes.webp);
+}
+
+#fondo3{
+  background-image: url(imagenes_procesadas/CarruselImagenMesero.webp);
+}
+
+#fondo4{
+  background-image: url(imagenes_procesadas/CarruselImagenCocinero.webp);
+}
+
+#imagenprueba{
+  width: 100%;
+  height: auto;
+}
+
+
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -302,6 +343,32 @@ hr {
   .slideshow-container{
     margin: auto;
     margin-top: 33px;
+  }
+
+  #fondo1,#fondo2,#fondo3,#fondo4{
+    width: 89vw;
+    height: 55vh;
+    max-width: 600px;
+    max-height: 337px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #fondo1{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_1_Tablet.webp);
+  }
+
+  #fondo2{
+    background-image: url();
+  }
+
+  #fondo3{
+
+  }
+
+  #fondo4{
+    /*Dejar vacio aqui por ahora*/
   }
   
   .numbertext, .text {
