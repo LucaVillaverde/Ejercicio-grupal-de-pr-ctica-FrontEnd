@@ -16,6 +16,7 @@
         <!---------------->
 
         <!--CSS Files / Archivos CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="style.css" rel="stylesheet" type="text/css" />
         <!---------------->
     </head>
@@ -23,11 +24,18 @@
         <header>
             <div class="logo">
                 <img src="" alt="" />
-                <nav>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#contacto">Contacto</a>
+                <nav class="topnav">
+                    <a href="#home" class="active">Logo</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                      <a href="#nosotros">Nosotros</a>
+                      <a href="#servicios">Servicios</a>
+                      <a href="#contacto">Contacto</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myLinks()">
+                      <i class="fa fa-bars"></i>
+                    </a>
                 </nav>
             </div>
         </header>
@@ -124,7 +132,7 @@
                     <div class="texto">
                       <h3>Delivery</h3>
                       <p>
-                        Pida desde la comodida de su casa
+                        Pida desde la comodidad de su hogar
                       </p>
                     </div>
                   </div>
