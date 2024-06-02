@@ -24,7 +24,7 @@ h2{
 }
 
 h3{
-  font-size: 2em;
+  font-size: 1em;
   margin: 0;
   
 }
@@ -42,6 +42,10 @@ hr {
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #dfb302, #A10702, #dfb302);
+}
+
+.separador {
+  margin-top: 15px;
 }
 
 
@@ -89,9 +93,12 @@ hr {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 600px;
   position: relative;
   margin: auto;
+  margin-top: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Hide the images by default */
@@ -130,14 +137,14 @@ hr {
 .text {
   background-color: #DFB302;
   color: #A10702;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   text-shadow: 3px 3px 4px #0009;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  left: 26.9%;
-  width: 46.57%;
+  left: 13.5%;
+  width: 74%;
   text-align: center;
   border-radius: 20px;
   border: solid 2px;
@@ -158,6 +165,12 @@ hr {
 }
 
 /* The dots/bullets/indicators */
+
+#dots{
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -188,7 +201,7 @@ hr {
   width: 90vw;
   height: auto;
   min-height: 80vh; /*<-- ALTO DE SECCION EN BASE A LA PANTALLA*/ 
-  margin: 30px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
+  margin: 20px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
   padding: 8px;
 
   /*; ┌--- COLOR SOLO PARA VISUALIZACION DE SECCIONES */
@@ -261,7 +274,12 @@ hr {
   text-decoration: underline;
 }
 /*-------------------------------------*/
-
+@media (min-width: 425px){
+  .mySlides-Imagen{
+    max-height: 219px;
+    max-width: 390px;
+  }
+}
 
 /* Desktop Responsive */
 
@@ -281,6 +299,34 @@ hr {
     gap: 25px;
   }
 
+  .slideshow-container{
+    margin: auto;
+    margin-top: 33px;
+  }
   
+  .numbertext, .text {
+    font-size: 16px;
+  }
   
+  .text{
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slideshow-container{
+    max-width: 800px;
+  }
+
+  .numbertext, .text{
+    font-size: 21px;
+  }
+
+  .dot {
+    width: 22px;
+    height: 22px;
+    margin: 0 4px ;
+  }
+
 }
