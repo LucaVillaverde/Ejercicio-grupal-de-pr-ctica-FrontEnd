@@ -160,8 +160,6 @@ hr {
 }
 
 
-
-
 /*------------------------------ Seccion de servicios */
 #contenedor_servicios{
   /* display: grid;
@@ -201,7 +199,7 @@ hr {
   width: 200%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #1983c4;
+  background-color: #1f1f1f;
 }
 
 
@@ -217,7 +215,7 @@ hr {
   top: 50%;
   left: 50%;
   font-weight: bolder;
-  color: #dfb302;
+  color: #1983c4;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
