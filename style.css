@@ -14,7 +14,7 @@ body{
   
 }
 
-/* estilos generales */
+/* ---------------------estilos generales---------------------*/
 
 h2{
   font-size: 1.8em;
@@ -44,9 +44,9 @@ hr {
   background-image: linear-gradient(to right, #dfb302, #A10702, #dfb302);
 }
 
-.separador {
-  margin-top: 15px;
-}
+/* .separador {
+  margin-top: 15px; <-- Margin top para dots
+} */
 
 
 /* NAVBAR AQUI */
@@ -209,7 +209,9 @@ hr {
 
 #dots{
   text-align: center;
-  margin-bottom: 12px;
+/*   margin-top: 15px;
+  margin-bottom: 12px;     <-- Cambio para margin como top y bottom(de separador)*/
+  margin: 15px 0 12px 0;
 }
 
 .dot {
