@@ -44,12 +44,20 @@ hr {
   background-image: linear-gradient(to right, #dfb302, #A10702, #dfb302);
 }
 
-/* .separador {
-  margin-top: 15px; <-- Margin top para dots
-} */
+.separador {
+  margin-top: 85px; 
+}
+
+.separadorDots{
+  margin-top: 15px;
+}
 
 
 /* NAVBAR AQUI */
+
+#navegacion{
+  z-index: 1000;
+}
 
 .topnav {
   overflow: hidden;
@@ -87,6 +95,12 @@ hr {
   color: white;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  width: 90%;
+}
 
 /*  ---Carrusel--- */
 
@@ -134,12 +148,6 @@ hr {
 #fondo4{
   background-image: url(imagenes_procesadas/CarruselImagenCocinero.webp);
 }
-
-#imagenprueba{
-  width: 100%;
-  height: auto;
-}
-
 
 
 /* Hide the images by default */
@@ -352,9 +360,6 @@ hr {
     height: 55vh;
     max-width: 600px;
     max-height: 337px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   #fondo1{
@@ -362,15 +367,15 @@ hr {
   }
 
   #fondo2{
-    background-image: url();
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Clientes_Tablet.webp);
   }
 
   #fondo3{
-
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Mesero_Tablet.webp);
   }
 
   #fondo4{
-    /*Dejar vacio aqui por ahora*/
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Cocinero_Tablet.webp);
   }
   
   .numbertext, .text {
@@ -396,6 +401,48 @@ hr {
     width: 22px;
     height: 22px;
     margin: 0 4px ;
+  }
+
+  #fondo1,#fondo2,#fondo3,#fondo4{
+    width: 89vw;
+    height: 65vh;
+    max-width: 800px;
+    max-height: 449px;
+  }
+
+  #fondo1{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_1_1024px.webp);
+  }
+
+  #fondo2{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Clientes_1024px.webp);
+  }
+
+  #fondo3{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Mesero_1024px.webp);
+  }
+
+  #fondo4{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Cocina_1024px.webp);
+  }
+
+}
+
+@media (min-width: 1440px){
+
+  .slideshow-container{
+    max-width: 1280px;
+  }
+
+  #fondo1,#fondo2,#fondo3,#fondo4{
+    width: 100vw;
+    height: 75vh;
+    max-width: 1280px;
+    max-height: 720px;
+  }
+
+  #fondo4{
+    background-image: url(imagenes_procesadas/ImagenCarrusel_Cocinero_1280px.webp);
   }
 
 }
