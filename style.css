@@ -377,6 +377,10 @@ hr {
     padding-left: 15px;
   }
 
+  .myLinks{
+    float: right;
+  }
+
   .titulo_contacto{
     font-size: 1.8em;
   }
