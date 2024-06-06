@@ -1,9 +1,12 @@
-let slideIndex = 1;
+let slideIndex = 0, timer;
 showSlides(slideIndex);
+carruselAutomatico();
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  clearTimeout(timer);
+  timer = setTimeout(carruselAutomatico, 5000);
 }
 
 // Thumbnail image controls
@@ -12,24 +15,55 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 
+function carruselAutomatico(){
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timer = setTimeout(carruselAutomatico, 5000);
+}
+
 /* ------------------ */
 
 /* Barra de navegacion */
+
+function mediaQuery(){
+  var h = window.matchMedia("(min-width: 768px)")
+  if (h.matches) {
+    myLinks();
+    anchorsTablet();
+   }
+}
+
+function myLinksAnchors(h){
+  var h = window.matchMedia("(max-width: 768px)")
+  if (h.matches){
+  myLinks();
+  anchors();
+  }
+}
 
 function myLinks() {
   var x = document.getElementById("myTopnav");
@@ -39,3 +73,23 @@ function myLinks() {
     x.className = "topnav";
   }
 }
+
+
+
+function anchors(){
+  var f = document.getElementById("myLinksAnchor");
+  if (f.className === "display") {
+    f.className += " myLinks";
+  } else {
+    f.className = "display";
+  }
+}
+
+function anchorsTablet(){
+  var f = document.getElementById("myLinksAnchor");
+  if (f.className === "display") {
+    f.className = "myLinks";
+  }
+}
+
+

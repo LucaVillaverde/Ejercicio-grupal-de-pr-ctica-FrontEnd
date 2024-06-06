@@ -86,13 +86,15 @@ hr {
 }
 
 .topnav a img{
-  max-width: 16px;
+  max-width: 48px;
 }
 
 #contenedorLogo{
-  max-width: 48px;
-  max-height: 48px;
+  width: 48px;
+  height: 48px;
   float: left;
+  background-image: url(/imagenes_procesadas/LogoNavBar.webp);
+  background-size: cover;
 }
 
 #aInicio{
@@ -105,6 +107,14 @@ hr {
   top: 0;
   left: 5%;
   width: 90%;
+}
+
+.display {
+  display: none;
+}
+
+.myLinks {
+  display: block;
 }
 
 /*  ---Carrusel--- */
@@ -381,6 +391,16 @@ hr {
     float: right;
   }
 
+  .display{
+    display: block;
+    float: right;
+    width: 50%;
+  }
+
+  a.links{
+    margin-right: 21px;
+  }
+
   .titulo_contacto{
     font-size: 1.8em;
   }
@@ -429,6 +449,10 @@ hr {
 
 @media (min-width: 1024px) {
 
+  .display{
+    width: 37.45%;
+  }
+
   .logo{
     display: none;
   }
@@ -471,6 +495,40 @@ hr {
 }
 
 @media (min-width: 1440px){
+
+  .topnav{
+    height: 60px;
+  }
+
+  #contenedorLogo{
+    width: 64px;
+    height: 64px;
+  }
+
+  #aInicio{
+    height: 100%;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+  }
+
+  .display{
+    width: 47%;
+  }
+
+  a.links{
+    box-sizing: unset;
+    margin-right: 0px;
+    width: 30%;
+    height: 100%;
+    font-size: 25px;
+    margin-left: 0px;
+    padding-top: 3%;
+    padding-bottom: 2.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   .slideshow-container{
     max-width: 1280px;
