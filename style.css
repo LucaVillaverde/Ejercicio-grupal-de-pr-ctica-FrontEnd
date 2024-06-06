@@ -93,7 +93,7 @@ hr {
   width: 48px;
   height: 48px;
   float: left;
-  background-image: url(/imagenes_procesadas/LogoNavBar.webp);
+  background-image: url(imagenes_procesadas/LogoNavBar.webp);
   background-size: cover;
 }
 
