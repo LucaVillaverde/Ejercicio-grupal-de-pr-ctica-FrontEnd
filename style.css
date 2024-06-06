@@ -258,6 +258,25 @@ hr {
   animation-duration: 2s;
 }
 
+/*Seccion nosotros*/
+
+#parrafoNosotros{
+  width: 100%;
+  text-align: justify;
+}
+
+#contenedorImagenNosotros{
+  width: 100%;
+}
+
+#imagenNosotros{
+  width: 260px;
+  height: 260px;
+  background-image: url(logo_1600x1600.jpeg);
+  background-size: cover;
+  margin: auto;
+}
+
 
 /* ESTILO PARA CADA SECCION DE LA PAGINA */
 
