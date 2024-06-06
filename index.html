@@ -159,15 +159,15 @@
             <h2 class="titulo_contacto">CONTACTO</h2>
             <form action="">
               <label for="correo">Correo electronico: </label>
-              <input type="email" id="correo" placeholder="pepe@gmail.com">
+              <input type="email" id="correo" placeholder="pepe@gmail.com" required>
               <label for="asunto">Asunto: </label>
-              <input type="text" id="Asunto" placeholder="consulta">
+              <input type="text" id="Asunto" placeholder="consulta" required>
               <label for="descripcion">Descripcion: </label>
-              <textarea  id="descripcion" ></textarea>
+              <textarea  id="descripcion" required></textarea>
 
               <div id="botones">
-                <button>Enviar</button>
-                <button>Cancelar</button>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
               </div>
             </form>
           </section>
