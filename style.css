@@ -263,7 +263,10 @@ hr {
 #parrafoNosotros{
   width: 100%;
   text-align: justify;
+  font-size: 18px;
+  
 }
+
 
 #contenedorImagenNosotros{
   width: 100%;
@@ -284,8 +287,7 @@ hr {
   
   width: 90vw;
   height: auto;
-  min-height: 80vh; /*<-- ALTO DE SECCION EN BASE A LA PANTALLA*/ 
-  margin: 20px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
+  margin: 0px auto 25px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
   padding: 8px;
 
   /*; ┌--- COLOR SOLO PARA VISUALIZACION DE SECCIONES */
@@ -357,6 +359,39 @@ hr {
 .texto h3{
   text-decoration: underline;
 }
+
+form{
+  padding: 15px 0 ;
+  border: 2px solid #1983c4;
+  border-radius: 6px;
+}
+
+/*Seccion de formulario*/
+input,label, textarea, button{
+  display: block;
+  margin: auto;
+}
+
+textarea{
+  resize: none;
+  width: 66%;
+}
+
+
+#botones{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  width: 30%;
+}
+
+label{
+  text-align: center;
+}
+
+
 /*-------------------------------------*/
 @media (min-width: 425px){
   .mySlides-Imagen{
@@ -424,11 +459,19 @@ hr {
     font-size: 1.8em;
   }
 
+  #imagenNosotros{
+    width: 360px;
+    height: 360px;
+  }
+  
   #contenedor_servicios{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
   }
+
+
+
 
   .slideshow-container{
     margin: auto;
