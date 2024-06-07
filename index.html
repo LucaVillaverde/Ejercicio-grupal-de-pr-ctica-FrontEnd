@@ -26,9 +26,9 @@
                   <div id="contenedorLogo"></div>
                   <a href="#" id="aInicio">Inicio</a>
                   <div class="display" id="myLinksAnchor">
-                  <a class="links" href="#nosotros">Nosotros</a>
-                  <a class="links" href="#servicios">Servicios</a>
-                  <a class="links" href="#contacto">Contacto</a>
+                  <a class="links" id="aNosotros" href="#nosotros">Nosotros</a>
+                  <a class="links" id="aServicios" href="#servicios">Servicios</a>
+                  <a class="links" id="aContacto" href="#contacto">Contacto</a>
                   </div>
                   <a href="javascript:void(0);" class="icon" onclick="myLinksAnchors()">
                     <i class="fa fa-bars"></i>
@@ -36,13 +36,14 @@
                 </nav>
         </header>
         <main>
+          <h1 style="text-align: center; font-size: 1px;">Carrusel de imagenes para presentación</h1>
           <div class="separador"></div>
 <!----------------------------- Carrusel de presentación ----------------------------->
             <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="slideshow-container" title="Carrusel de imagenes para presentación">
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
+                    <div class="numbertext">Imagen 1 de 4</div>
                       <div class="flex-center">
                         <div id="fondo1" rel="preload" fetchpriority="high" class="flex-center"></div>
                       </div>
@@ -50,7 +51,7 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
+                    <div class="numbertext">Imagen 2 de 4</div>
                     <div class="flex-center">
                       <div id="fondo2" class="flex-center"></div>
                     </div>
@@ -58,14 +59,14 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
+                    <div class="numbertext">Imagen 3 de 4</div>
                     <div class="flex-center">
                       <div id="fondo3" class="flex-center"></div>
                     </div>
                     <div class="text"><h3>Con atencion de primera</h3></div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
+                    <div class="numbertext">Imagen 4 de 4</div>
                     <div class="flex-center">
                       <div id="fondo4" class="flex-center"></div>
                     </div>
@@ -157,17 +158,20 @@
           <section class="secciones">
 
             <h2 class="titulo_contacto">CONTACTO</h2>
-            <form action="">
-              <label for="correo">Correo electronico: </label>
-              <input type="email" id="correo" placeholder="pepe@gmail.com" required>
-              <label for="asunto">Asunto: </label>
-              <input type="text" id="Asunto" placeholder="consulta" required>
-              <label for="descripcion">Descripcion: </label>
-              <textarea  id="descripcion" required></textarea>
+            <form action="https://formsubmit.co/lucavilla2017@hotmail.com" method="post">
+
+              <label for="email">Correo electronico: </label>
+              <input type="email" name="email" id="correo" placeholder="pepe@gmail.com" required>
+
+              <label for="subject">Asunto: </label>
+              <input type="text" name="subject" id="Asunto" placeholder="consulta" required>
+
+              <label for="comments">Descripcion: </label>
+              <textarea name="comments" id="descripcion" required></textarea>
 
               <div id="botones">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Cancelar">
+                <input class="botones" type="submit" value="Enviar">
+                <input class="botones" type="reset" value="Cancelar">
               </div>
             </form>
           </section>

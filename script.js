@@ -6,7 +6,7 @@ carruselAutomatico();
 function plusSlides(n) {
   showSlides(slideIndex += n);
   clearTimeout(timer);
-  timer = setTimeout(carruselAutomatico, 5000);
+  timer = setTimeout(carruselAutomatico, 6000);
 }
 
 // Thumbnail image controls
@@ -42,7 +42,7 @@ function carruselAutomatico(){
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  timer = setTimeout(carruselAutomatico, 5000);
+  timer = setTimeout(carruselAutomatico, 6000);
 }
 
 /* ------------------ */

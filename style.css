@@ -9,7 +9,8 @@ html{
 
 body{
   font-size: 0.8em;
-  
+  background: rgb(255,220,80);
+  background: linear-gradient(180deg, rgba(255,220,80,1) 0%, rgba(255,219,72,1) 30%, rgba(255,214,54,1) 70%, rgba(255,211,37,1) 100%);
   color: #740301;
   
 }
@@ -72,6 +73,10 @@ hr {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+#aContacto{
+  margin-right: 0px;
 }
 
 .topnav a:hover {
@@ -274,9 +279,10 @@ hr {
 
 #imagenNosotros{
   width: 260px;
-  height: 260px;
-  background-image: url(logo_1600x1600.jpeg);
-  background-size: cover;
+  height: 150px;
+  background-image: url(imagenes_procesadas/trabajadores_restaurante_comida_rapida_shutterstock_1587013387.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: auto;
 }
 
@@ -441,6 +447,14 @@ label{
     padding-left: 15px;
   }
 
+  #aNosotros, #aServicios{
+    margin-right: 0px;
+  }
+
+  #aNosotros{
+    margin-left: 63.5px;
+  }
+
   .myLinks{
     float: right;
   }
@@ -460,8 +474,12 @@ label{
   }
 
   #imagenNosotros{
-    width: 360px;
-    height: 360px;
+    width: 420px;
+    height: 260px;
+    background-image: url(imagenes_procesadas/trabajadores_restaurante_comida_rapida_shutterstock_1587013387.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
   }
   
   #contenedor_servicios{
@@ -507,12 +525,29 @@ label{
     left: 25%;
     width: 50%;
   }
+
+  #correo,#Asunto{
+    width: 66%;
+  }
+
+  #descripcion{
+    height: 80px;
+  }
+
+  .botones{
+    width: 10%;
+  }
 }
 
 @media (min-width: 1024px) {
 
   .display{
     width: 37.45%;
+  }
+
+  #aNosotros{
+    margin-right: 0px;
+    margin-left: 63px;
   }
 
   .logo{
@@ -554,12 +589,21 @@ label{
     background-image: url(imagenes_procesadas/ImagenCarrusel_Cocina_1024px.webp);
   }
 
+  .botones{
+    font-size: 16px;
+  }
+
 }
 
 @media (min-width: 1440px){
 
   .topnav{
     height: 60px;
+  }
+
+  #aNosotros{
+    margin-right: 0.96874px;
+    margin-left: 0px;
   }
 
   #contenedorLogo{
@@ -617,4 +661,35 @@ label{
     background-image: url(imagenes_procesadas/ImagenCarrusel_Cocinero_1280px.webp);
   }
 
+  #imagenNosotros{
+    width: 700px;
+    height: 380px;
+  }
+
+  #descripcion{
+    height: 120px;
+  }
+
+}
+
+@media (min-width: 1788px) {
+  a.links{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  #aNosotros{
+    margin-left: 15.65px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1920px){
+  #aNosotros{
+    margin-left: 21.2px;
+  }
+
+  form{
+    font-size: 25px;
+  }
 }
