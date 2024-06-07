@@ -438,20 +438,30 @@ footer{
 }
 
 #contenedorLogosFooter{
-  width: 150px;
-  height: 150px;
-  margin-left: 580px;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 50px;
+  margin: auto;
 }
 
-.logoFooter{
+/*.logoFooter{
   width: 90px;
   height:70px;
   float: left;
   margin: auto;
   justify-content: center;
   padding-left: 40px;
-  
+}
+*/
+.logoFooter{
+  width: 30px;
+  height:30px;
+}
 
+#realizado{
+  text-align: center;
+  font-weight: bolder;
 }
 
 /*-------------------------------------*/
@@ -597,6 +607,8 @@ footer{
   #logoNosotros{
     width: 100px;
   }
+
+  
 }
 
 @media (min-width: 1024px) {
@@ -657,6 +669,16 @@ footer{
     width: 150px;
   }
 
+  .logoFooter{
+    display: flex;
+    width: 30px;
+    height:30px;
+  }
+  
+  #realizado{
+    text-align: center;
+    font-weight: bolder;
+  }
 }
 
 @media (min-width: 1440px){
@@ -780,8 +802,8 @@ footer{
 }
 
 #contenedorLogosFooter{
-  width: 150px;
-  height: 150px;
+  width: 90vw;
+  height: 20vh;
   margin-left: 580px;
 }
 
