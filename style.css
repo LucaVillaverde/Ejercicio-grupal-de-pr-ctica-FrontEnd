@@ -427,51 +427,33 @@ footer{
   width: 100%;
 }
 
-.parrafoFooter{
-  padding-left: 10px;
-  text-align: center;
+iframe{
+  width: 100%;
 }
 
-#mapa{
-  padding: 10px;
-  margin-left: 500px;
-}
-
-#contenedorLogosFooter{
-  display: flex;
-  justify-content: space-between;
-  width: 90vw;
-  height: 50px;
-  margin: auto;
-}
-
-/*.logoFooter{
-  width: 90px;
-  height:70px;
-  float: left;
-  margin: auto;
-  justify-content: center;
-  padding-left: 40px;
-}
-*/
-.logoFooter{
-  width: 30px;
-  height:30px;
-}
-
-#realizado{
-  text-align: center;
-  font-weight: bolder;
+#logoInstagram{
+  margin-right: 58%;
+  margin-left: 30px;
 }
 
 /*-------------------------------------*/
+@media (min-width: 375px){
+
+  #logoInstagram{
+    margin-right: 60%;
+  }
+
 @media (min-width: 425px){
   .mySlides-Imagen{
     max-height: 219px;
     max-width: 390px;
   }
-}
 
+  #logoInstagram{
+    margin-right: 63%;
+  }
+}
+}
 /* ------------------------------------*/
 
 /* Ajuste de la barra de navegacion */
@@ -608,7 +590,11 @@ footer{
     width: 100px;
   }
 
-  
+  #logoInstagram{
+    margin-right: 58%;
+    margin-left: 12%;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -668,17 +654,7 @@ footer{
   #logoNosotros{
     width: 150px;
   }
-
-  .logoFooter{
-    display: flex;
-    width: 30px;
-    height:30px;
-  }
   
-  #realizado{
-    text-align: center;
-    font-weight: bolder;
-  }
 }
 
 @media (min-width: 1440px){
@@ -783,39 +759,5 @@ footer{
     font-size: 25px;
   }
 }
-@media (min-width: 375px){
- 
-footer{
-  border: 1px solid #740301;
-  background-color: #ffdc50;
-  width: 100%;
-}
-
-.parrafoFooter{
-  padding-left: 10px;
-  text-align: center;
-}
-
-#mapa{
-  padding: 10px;
-  margin-left: 34px;
-}
-
-#contenedorLogosFooter{
-  width: 90vw;
-  height: 20vh;
-  margin-left: 580px;
-}
-
-.logoFooter{
-  width: 90px;
-  height:70px;
-  float: left;
-  margin: auto;
-  justify-content: center;
-  
-
-}
-  }
  
 
