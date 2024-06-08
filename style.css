@@ -274,6 +274,12 @@ hr {
   height: auto;
 }
 
+#tituloNosotros{
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bolder;
+}
+
 h2{
   width: 100%;
 }
