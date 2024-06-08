@@ -9,9 +9,7 @@ html{
 
 body{
   font-size: 0.8em;
-  /*background: rgb(255,220,80);
-  background: linear-gradient(180deg, rgba(255,220,80,1) 0%, rgba(255,219,72,1) 30%, rgba(255,214,54,1) 70%, rgba(255,211,37,1) 100%);*/
-  background-image: url(82588499-patrón-de-comida-rápida-puede-ser-utilizado-para-textil-fondo-del-sitio-web-portada-del-libro.jpg);
+  background-image: url(imagenes_procesadas/FondoPagina.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -240,8 +238,6 @@ hr {
 
 #dots{
   text-align: center;
-/*   margin-top: 15px;
-  margin-bottom: 12px;     <-- Cambio para margin como top y bottom(de separador)*/
   margin: 15px 0 12px 0;
 }
 
@@ -325,9 +321,6 @@ h2{
   height: auto;
   margin: 0px auto 25px auto; /*<-- SEPARACION DESDE LOS LOS COSTADOS Y DE ARRAIBA Y ABAJO*/
   padding: 8px;
-
-  /*; ┌--- COLOR SOLO PARA VISUALIZACION DE SECCIONES */
-  /* background-color: #1983c4c0  */
 }
 
 
