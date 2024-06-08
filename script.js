@@ -49,13 +49,7 @@ function carruselAutomatico(){
 
 /* Barra de navegacion */
 
-function mediaQuery(){
-  var h = window.matchMedia("(min-width: 768px)")
-  if (h.matches) {
-    myLinks();
-    anchorsTablet();
-   }
-}
+
 
 function myLinksAnchors(h){
   var h = window.matchMedia("(max-width: 768px)")
@@ -74,21 +68,12 @@ function myLinks() {
   }
 }
 
-
-
 function anchors(){
   var f = document.getElementById("myLinksAnchor");
   if (f.className === "display") {
     f.className += " myLinks";
   } else {
     f.className = "display";
-  }
-}
-
-function anchorsTablet(){
-  var f = document.getElementById("myLinksAnchor");
-  if (f.className === "display") {
-    f.className = "myLinks";
   }
 }
 
