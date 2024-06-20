@@ -4,7 +4,7 @@ carruselAutomatico();
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += n); // slideIndex = slideIndex + 1 / 1 = 1 + -1
   clearTimeout(timer);
   timer = setTimeout(carruselAutomatico, 6000);
 }
@@ -37,7 +37,7 @@ function carruselAutomatico(){
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
